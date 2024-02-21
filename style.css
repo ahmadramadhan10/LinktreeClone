@@ -1,0 +1,117 @@
+#body {
+    background-color: rgb(5,9,30);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text {
+    color: white;
+    font-size: 1.2vw;
+}
+
+#header{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+#first_button {
+    min-width: 2vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#share_link {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titik_tiga {
+    font-size: 1vw;
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+#pos_profile{
+    display: flex;
+    justify-content: center;
+    padding-top : 5%
+}
+
+#profile{
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+}
+
+#username {
+    display: flex;
+    justify-content: center;
+}
+
+#find {
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+}
+
+#main_section{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 5%;
+}
+
+.contact {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border : 1px solid white;
+    border-radius: 5vw;
+    padding: 0.7vw;
+}
+
+.icon {
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    padding-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media{
+    font-size: 1.5vw;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+}
