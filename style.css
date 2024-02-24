@@ -2,18 +2,18 @@
     background-color: rgb(5,9,30);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: medium;
     font-style: normal;
 }
 
 .text {
     color: white;
-    font-size: 1.2vw;
+    font-size: 20px;
 }
 
 #header{
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; 
     margin-left: 24%;
     margin-right: 24%;
 }
@@ -29,7 +29,9 @@
 
 #share_link {
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
     border: none;
     background-color: transparent;
     display: flex;
@@ -38,7 +40,7 @@
 }
 
 .titik_tiga {
-    font-size: 1vw;
+    font-size: 15px;
     color: white;
     justify-content: center;
     align-content: center;
@@ -51,8 +53,8 @@
 }
 
 #profile{
-    width: 15%;
-    height: 15%;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
 }
 
@@ -61,17 +63,21 @@
     justify-content: center;
 }
 
+#text-user {
+    font-size: 25px; color: white; font-weight: bolder;
+}
+
 #find {
     display: flex;
     justify-content: center;
-    padding: 1vw;
+    padding-bottom: 10px;
 }
 
 #main_section{
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 27%;
+    margin-right: 27%;
     padding-bottom: 5%;
 }
 
@@ -81,12 +87,12 @@
     display: flex;
     justify-content: space-between;
     border : 1px solid white;
-    border-radius: 5vw;
-    padding: 0.7vw;
+    border-radius: 40px;
+    padding: 10px;
 }
 
 .icon {
-    padding-left: 1vw;
+    padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,19 +105,61 @@
 }
 
 .link {
-    padding-right: 1vw;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .social_media{
-    font-size: 1.5vw;
+    font-size: 22px;
     color: white;
 }
 
 #footer {
     display: flex;
     justify-content: center;
-    padding-bottom: 3vw;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (max-width : 600px) {
+
+    .text {
+        font-size: 15px;
+    }
+
+    #username #text-user{
+        font-size: 20px;
+    }
+
+    #header {
+        margin-left: 5%;
+        margin-right: 5%;   
+    }
+
+    #main_section{ 
+        margin-left: 5%;
+        margin-right: 5%;   
+    }
+}
+
+.contact:hover{
+    transform: translateY(-0.2rem) scale(1.05);
+    background-color: gray;
+    .social_media {
+        color: rgb(5,9,30);
+    }
+
+    h2 {
+        color: rgb(5,9,30);
+    }
+
+    .titik_tiga {
+        color: rgb(5,9,30);
+    }
+}
+
+#share_link:hover{
+    background-color: rgb(71, 71, 71);
 }
