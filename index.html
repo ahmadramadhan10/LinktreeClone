@@ -20,7 +20,7 @@
     <body id="body">
         <header id="header">
             <div id="first_button">
-                <button id="share_link" onclick="share(); window.open()">
+                <button id="share_link" onclick="share(event, 'https://ahmadramadhan10.github.io/LinktreeClone/')">
                     <span class="material-symbols-outlined titik_tiga">
                         share
                     </span>
@@ -47,7 +47,7 @@
                     <div class="text_contact">
                         <h2 class="text">Instagram</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://www.instagram.com/ahmad.ramadhaaan/?hl=en')">
                         <button id="share_link" >
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -66,7 +66,7 @@
                     <div class="text_contact">
                         <h2 class="text">LinkedIn</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://www.linkedin.com/in/ahmad-ramadhan-3484b2167/')">
                         <button id="share_link">
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -84,7 +84,7 @@
                     <div class="text_contact">
                         <h2 class="text">Twitter</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://twitter.com/ahmadramadhaaan')">
                         <button id="share_link">
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -102,7 +102,7 @@
                     <div class="text_contact">
                         <h2 class="text">Github</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://github.com/ahmadramadhan10')">
                         <button id="share_link" >
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -120,7 +120,7 @@
                     <div class="text_contact">
                         <h2 class="text">Facebook</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://www.facebook.com/people/Ahmad-Ramadhan/pfbid0xsnztbuJCXcjbmoFwGxfcKSB9Nu2tBYmx6XuURxqjfJnXPp6VPzBqsRjqEL8iUFCl/')">
                         <button id="share_link" >
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -138,7 +138,7 @@
                     <div class="text_contact">
                         <h2 class="text">Email</h2>
                     </div>
-                    <div class="link" onclick="share(event)">
+                    <div class="link" onclick="share(event, 'https://mail.google.com/mail/?view=cm&fs=1&to=aaarama21@gmail.com&su=Judul%20Email&body=Pesan%20Email')">
                         <button id="share_link" >
                             <span class="material-symbols-outlined titik_tiga">
                                 share
@@ -165,7 +165,7 @@
             </div>
             <div class="modal-main">
                 <section>
-                    <div class="share-via" onclick="">
+                    <div class="share-via" onclick="share_link('https://api.whatsapp.com/send?text=Check%20out%20this%20link:%20','')">
                         <div class="icon" style="padding-right: 10px;">
                             <i class="bi bi-whatsapp" style="font-size: large;"></i>
                         </div>
@@ -175,12 +175,42 @@
                     </div>
                 </section>
                 <section>
-                    <div class="share-via">
+                    <div class="share-via" onclick="share_link('https://www.facebook.com/sharer/sharer.php?u=','')">
                         <div class="icon" style="padding-right: 10px;">
-                            <i class="bi bi-instagram" style="font-size: large;"></i>
+                            <i class="bi bi-facebook" style="font-size: large;"></i>
                         </div>
                         <div class="text-share-via">
-                            Share on Instagram
+                            Share on Facebook
+                        </div>  
+                    </div>
+                </section>
+                <section>
+                    <div class="share-via" onclick="share_link('https://social-plugins.line.me/lineit/share?url=','')">
+                        <div class="icon" style="padding-right: 10px;">
+                            <i class="bi bi-line" style="font-size: large;"></i>
+                        </div>
+                        <div class="text-share-via">
+                            Share on Line
+                        </div>  
+                    </div>
+                </section>
+                <section>
+                    <div class="share-via" onclick="share_link('https://twitter.com/intent/tweet?url=','&text=Check%20out%20this%20link','')">
+                        <div class="icon" style="padding-right: 10px;">
+                            <i class="bi bi-twitter" style="font-size: large;"></i>
+                        </div>
+                        <div class="text-share-via">
+                            Share on Twitter
+                        </div>  
+                    </div>
+                </section>
+                <section>
+                    <div class="share-via" onclick="share_link('https://www.linkedin.com/sharing/share-offsite/?url=','')">
+                        <div class="icon" style="padding-right: 10px;">
+                            <i class="bi bi-linkedin" style="font-size: large;"></i>
+                        </div>
+                        <div class="text-share-via">
+                            Share on LinkedIn
                         </div>  
                     </div>
                 </section>
